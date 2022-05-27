@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Match Face
+{% endblock title %}
+
+{% block body %}
+
+    {% comment %} Image Select Box {% endcomment %}
+    <form method="post" action="{% url 'simgUpload' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="singImg mx-auto">
+            <h1 class="hding">Select Your Image</h1>
+            <input type="file" name="simage" class="choseBox">
+            <input type="submit" value="Upload Image" class="btn01">
+        </div>
+    </form>
+
+    <br>
+
+    {% comment %} Your Image show {% endcomment %}
+    {% for d in data1 %}
+        <img width="200" height="200" src="{{d.image.url}}">
+    {% endfor %}
+
+    {% comment %} Image Select Box {% endcomment %}
+    <form method="post" action="{% url 'mulimgUpload' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="singImg mx-auto">
+            <h1 class="hding">Select images from which you want to find yourself</h1>
+            <input type="file" name="images" class="choseBox" multiple>
+            <input type="submit" value="Upload Images" class="btn01">
+        </div>
+    </form>
+
+    <br>
+
+    {% comment %} Multiple Images show {% endcomment %}
+    <div class="mimgBpx">
+        {% for d in data2 %}
+        <img width="200" height="200" src="{{d.images.url}}">
+        {% endfor %}
+    </div>
+
+    <br>
+
+    {% comment %} Delete Image Button {% endcomment %}
+    <form method="post" action="{% url 'deletePics' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="submit" value="Delete All Images" class="delbtn">
+    </form>
+
+    {% comment %} Find yourself Button {% endcomment %}
+    <a href="/home"><button class="dbtn">Find yourself</button></a>
+    
+{% endblock body %}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+/* font-family: 'Padauk', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navb {
+    height: 68px;
+    background-image: linear-gradient(24deg, #193249, #6890bd);
+    text-align: left;
+    font-size: 25px;
+    padding: 15px 18px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-family: 'Padauk', sans-serif;
+}
+
+.container {
+    font-size: 20px;
+    margin-top: 100px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+.hding {
+    font-size: 26px;
+    padding: 8px;
+    margin-top: 43px;
+    font-weight: bold;
+    padding-top: 28px;
+}
+
+.singImg{
+    background: #47494c70;
+}
+
+.choseBox {
+    margin-top: 2px;
+    margin-bottom: 29px;
+}
+
+input::file-selector-button {
+    padding: 1px 10px;
+    border-radius: 10px;
+    background-color: #5c6977b5;
+    color: white;
+    font-size: 20px;
+}
+
+input::file-selector-button:hover, .btn01:hover {
+    border: 2px solid #3a5ca087;
+    border: 2px solid #373e46b5;
+    cursor:grab;
+}
+
+.btn01,.delbtn {
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    margin-top: 25px;
+    background-color: #5c6977b5;
+    border-radius: 10px;
+    color: white;
+}
+
+img {
+    border: 5px solid #52769d5c;
+    margin: 10px 12px;
+}
+.dbtn{
+    padding: 2px 22px;
+    margin-bottom: 36px;
+    background: linear-gradient(40deg, #ba2525, #cf4e69);
+    width: 401px;
+    color: white;
+    border-radius: 49px;
+    height: 43px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(40deg, #1872d3, #34a7ae);
+}
+
+.dbtn:hover{
+    border: 2px solid #bf2e34;
+    border: 2px solid #3a5ca087;
+}
+
+.delbtn{
+    background: linear-gradient(40deg, #ba2525, #cf4e69);
+    margin-bottom: 32px;
+}
+.delbtn:hover{
+    border: 4px solid #bf2e34;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} 
+::-webkit-scrollbar-thumb {
+    background: #233d57 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5d83ad
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Matched Face
+{% endblock title %}
+
+{% block style %}
+    {% comment %} Styling {% endcomment %}
+    .hding {
+        padding: 12px;
+        font-size: 37px;
+    }
+    .container{
+        background: #47494c70;
+        margin-bottom: 40px;
+    }
+
+    .dwnbtn {
+        background: #5c6977b5;
+        padding: 7px 19px;
+        color: white;
+        border-radius: 13px;
+    }
+
+    .dwnbtn:hover {
+        color: #17d0ec;
+    }
+
+    .perimg {
+        margin: 20px;
+    }
+
+    .cont2 {
+        display: inline-flex;
+        flex-direction: inherit;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+{% endblock style %}
+
+
+{% block body %}
+
+    <h1 class="hding">Your Images</h1>
+
+    {% comment %} Show Images {% endcomment %}
+    <div class="cont2">
+        {% for d in data %}
+            <span class="perimg">
+                {% comment %} image {% endcomment %}
+                <a href="{{d.url}}"><img width="250" height="250" src="{{d.url}}"></a>
+                {% comment %} for download {% endcomment %}
+                <div>
+                    <a class="dwnbtn" href="{{d.url}}" download><i class="fa fa-download"> - {{d.url}}</i></a>
+                </div>
+            </span>
+        {% endfor %}
+    </div>
+
+    {% comment %} Back Button {% endcomment %}
+    <form method="post" action="{% url 'gback' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button class="delbtn">GO BACK</button>
+    </form>
+
+    {% comment %} Find Again Button {% endcomment %}
+    <form method="post" action="{% url 'deletePics' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button class="dbtn">FIND AGAIN</button>
+    </form>
+
+{% endblock body %}
