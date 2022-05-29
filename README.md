@@ -12,6 +12,7 @@
 **Note: Python version 3.10.4 was used for this project.**
 
 
+
 ## Requirements
 Requirement 1: 
 
@@ -66,7 +67,8 @@ Requirement 7:
 ```python
 pip install django
 ```
-To run server: 
+
+**To run the web app on your local computer, clone this repository, open the terminal in the same directory and run the following command :**
 ```python
 python manage.py runserver
 ```
