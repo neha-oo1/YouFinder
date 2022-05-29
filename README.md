@@ -13,7 +13,7 @@
 
 
 
-## Requirements
+## Requirements to run the website
 Requirement 1: 
 
 Install python version>=3.7
@@ -34,10 +34,12 @@ pip install dlib
 ``` 
 (if any error in installing dlib then try this) 
 
-To Check Python Version Type in cmd
+Check Python Version Type in cmd
 ```python
 python --version
 ```
+And then
+
 For Python 3.7..
 ```python
 pip install https://github.com/Murtaza-Saeed/dlib/raw/master/dlib-19.19.0-cp37-cp37m-win_amd64.whl
