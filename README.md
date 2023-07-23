@@ -4,7 +4,7 @@
 
 - <b>'YouFinder'</b>  is a web application based on facial recognition technology for all the lazy peeps like me who does not want to scroll through their whole gallery to find all the photos in which they are present. Here in this website, you just have to upload your single image and all the other images from which you want to find yourself and the application will display all your photos having an option to download it. 
 
-- <b>Languages and Technologies used : </b> Python, HTML & CSS
+- <b>Languages and Technologies used : </b> Python, HTML and CSS
 - Django web framework was used for the development of the whole web app. OpenCv and face_recognition API's were used for the development of Face Recognizer. 
 
 
