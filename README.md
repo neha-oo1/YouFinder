@@ -2,16 +2,12 @@
 
 ## About the Website
 
-- <b>'YouFinder'</b>  is a web application based on facial recognition technology for all the lazy peeps like me who does not want to scroll through their whole gallery to find all the photos in which they are present. Here in this website, you just have to upload your single image and all the other images from which you want to find yourself and the application will display all your photos having an option to download it. 
+- <b>'YouFinder'</b> is a web application based on facial recognition technology for all the lazy peeps like me who does not want to scroll through their whole gallery to find all the photos in which they are present. Here in this website, you just have to upload your single image and all the other images from which you want to find yourself and the application will display all your photos having an option to download it.
 
-- <b>Languages and Technologies used : </b> Python, HTML and CSS
+- <b>Languages and Technologies used: </b> Python, HTML and CSS
 - Django web framework was used for the development of the whole web app. OpenCv and face_recognition API's were used for the development of Face Recognizer. 
 
-
-
 **Note: Python version 3.10.4 was used for this project.**
-
-
 
 ## Requirements to run the website
 Requirement 1: 
@@ -32,7 +28,7 @@ Requirement 4:
 ```python
 pip install dlib
 ``` 
-(if any error in installing dlib then try this) 
+If any error occurs in installing dlib then try this:
 
 Check Python Version Type in cmd
 ```python
@@ -70,12 +66,13 @@ Requirement 7:
 pip install django
 ```
 
-**To run the web app on your local computer, clone this repository, open the terminal in the same directory and run the following command :**
+**To run the web app on your local computer, clone this repository, open the terminal in the same directory and run the following command:**
+
 ```python
 python manage.py runserver
 ```
-Open your favorite browser. I recommend using Google Chrome or Brave and open the following url:
 
+Open your favorite browser. I recommend using Google Chrome or Brave and open the following url:
 ![](Website_Screenshots/5.jpg)
 
 
@@ -92,5 +89,3 @@ Open your favorite browser. I recommend using Google Chrome or Brave and open th
 <h3 align='center'>Your all images are displayed</h3>
 
 ![](Website_Screenshots/4.jpg)
-
-<b>Website Demo Link : </b>https://youtu.be/1sVXSlaItig
