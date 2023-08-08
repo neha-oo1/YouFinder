@@ -66,7 +66,7 @@ Requirement 7:
 pip install django
 ```
 
-**To run the web app on your local computer, clone this repository, open the terminal in the same directory and run the following command:**
+**To run the web app on your local computer, clone this repository, open the terminal in the same directory and run the following command :**
 
 ```python
 python manage.py runserver
