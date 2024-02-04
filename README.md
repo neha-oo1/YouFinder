@@ -53,6 +53,10 @@ For Python 3.10..
 ```python
 pip install https://github.com/Murtaza-Saeed/dlib/raw/master/dlib-19.22.99-cp310-cp310-win_amd64.whl
 ```
+For Python 3.11..
+```python
+pip install https://github.com/Murtaza-Saeed/dlib/raw/master/dlib-19.24.1-cp311-cp311-win_amd64.whl
+```
 Requirement 5: 
 ```python
 pip install face_recognition
